@@ -1,0 +1,18 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Datos de para el pago</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Cerrar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+          <div class="list">
+              <label class="item item-input">
+                  <input type="text" placeholder="No. Tarjeta" data-stripe="number">
+              </label>
+              <label class="item">
+                  <button class="button button-block button-positive" type="submit">Guardar</button>
+              </label>
+          </div>
+  </ion-content>
+</ion-modal-view>

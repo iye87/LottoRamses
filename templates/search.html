@@ -1,0 +1,25 @@
+<ion-view view-title="Playlist">
+    <ion-content>
+    <h2 class="bt_title" style="text-align: center">Inserte los dotos</h2>
+        <form stripe:form="saveCustomer">
+            <span class="payment-errors"></span>
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="No. Tarjeta" data-stripe="number">
+                </label>
+                <label class="item item-input">
+                        <div class="row">
+                            <div class="col"><input type="text" placeholder="Expiration (MM)"data-stripe="exp_month"></div>
+                            <div class="col"><input type="text" placeholder="Expiration (YY)" data-stripe="exp_year"></div>
+                        </div>            
+                </label>
+                <label class="item item-input">
+                        <input type="text" placeholder="CVC" data-stripe="cvc">
+                </label>
+                <label style="text-align: center">
+                        <button class="button button-positive" type="submit">Pagar</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,115 @@
+<ion-view view-title="Los números de Ransset">
+  <ion-content>
+    <div class="list">
+        <img class="full-image" src="img/banner_ransett.png">
+      
+          <div class="item item-thumbnail-left" href="#">
+            <img src="img/quiniela2.png">
+            <div class="row">
+                <div class="col" style="text-align: center">
+                  <h2>Quiniela</h2>                  
+                  <div ng-show="quiela_visible"><p>Ransset recomienda: <h2><b>{{quiniela}}</h2></b></p></div>
+                  <div ng-show="vs_solicitar_quiniela"><p>Solicitenos su número</p></div>
+                </div>
+            </div>            
+          </div>
+
+          <div class="item item-thumbnail-left" href="#">
+            <img src="img/pale.jpg">
+            <div class="row">
+                <div class="col" style="text-align: center">
+                  <h2>Palé</h2>                  
+                  <div ng-show="parle_visible"><p>Ransset recomienda: <h2><b>{{parle}}</b></h2></p></div>
+                  <div ng-show="vs_solicitar_parle"><p>Solicitenos su número</p></div>
+                </div>
+            </div>            
+          </div>
+
+          <div class="item item-thumbnail-left" href="#">
+            <img src="img/tripleta.jpg">
+            <div class="row">
+                <div class="col" style="text-align: center">
+                  <h2>Tripleta</h2>                  
+                  <div ng-show="tripleta_visible"><p>Ransset recomienda: <h2><b>{{tripleta}}</b></h2></p></div>
+                  <div ng-show="vs_solicitar_tripleta"><p>Solicitenos su número</p></div>
+                </div>
+            </div>            
+          </div>
+
+          <div class="item item-thumbnail-left" href="#">
+                <img src="img/pega4.png">
+                <div class="row">
+                    <div class="col" style="text-align: center">
+                      <h2>Pega 4</h2>                  
+                      <div ng-show="pega_cuatro_visible"><p>Ransset recomienda: <h2><b>{{pega_cuatro}}</b></h2></p></div>
+                      <div ng-show="vs_solicitar_pega_cuatro"><p>Solicitenos su número</p></div>
+                    </div>
+                </div>            
+              </div>
+              
+              <div class="item item-thumbnail-left" href="#">
+                    <img src="img/loto.jpg">
+                    <div class="row">
+                        <div class="col" style="text-align: center">
+                          <h2>Loto Ransset</h2>                  
+                          <div ng-show="loto_visible"><p>Ransset recomienda: <h2><b>{{loto}}</b></h2></p></div>
+                          <div ng-show="vs_solicitar_loto"><p>Solicitenos su número</p></div>
+                        </div>
+                    </div>            
+                  </div>
+          <label class="item">
+              <!--<button class="button button-assertive icon ion-ios-cart" ng-click="mostrar_pagar()" ng-disabled="btn_pagar"></button>-->
+              <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="iyemartinez1987-facilitator@gmail.com">
+                <input type="hidden" name="item_name" value="Premium Subscription">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="amount" value="1.00">
+                <input type="hidden" name="no_shipping" value="1">
+                <input type="hidden" name="invoice" id="invoice" value="{{codigo}}" >
+                <input type="hidden" name="notify_url" id="notify_url" value="https://serverloto.000webhostapp.com/webservise/paypal/notificacion.php"/>
+                <input type="image" src="http://www.paypal.com/es_XC/i/btn/x-click-but01.gif"
+                       name="submit"
+                       alt="Make payments with PayPal - it's fast, free and secure!">
+            </form>
+          </label>
+          
+      </div>
+  </ion-content>
+
+  <!--<ion-content ng-show="form_pagar">
+        <div class="row">
+            <div class="col"><h3 class="title">Datos de para el pago</h3></div>
+            <div class="col">
+                <div class="buttons">
+                <button class="button button-clear" ng-click="mostrar_quiniela()">Cerrar</button>
+                </div>
+            </div>
+        </div>
+              
+          <form stripe:form="saveCustomer">
+              <div class="payment-errors" style="text-align: center; color: red">{{sms_error}}</div>
+              <div class="list">
+                  <label class="item item-input">
+                      <i class="icon ion-card placeholder-icon"></i>
+                      <input type="text" placeholder="No. Tarjeta" data-stripe="number">
+                  </label>
+                  <label class="item item-input">
+                      <i class="icon ion-calendar placeholder-icon"></i>
+                      <input type="text" placeholder="Expiration (MM)"data-stripe="exp_month">
+                  </label>
+                  <label class="item item-input">
+                      <i class="icon ion-calendar placeholder-icon"></i>
+                      <input type="text" placeholder="Expiration (YY)" data-stripe="exp_year">
+                  </label>
+                  <label class="item item-input">
+                      <i class="icon ion-locked placeholder-icon"></i>
+                      <input type="text" placeholder="CVC" data-stripe="cvc">
+                  </label>
+              </div>
+              <div style="text-align: center">
+                  <button class="button button-positive " type="submit">   Pagar   </button>
+              </div>
+          </form>
+      </ion-content>-->
+</ion-view>
