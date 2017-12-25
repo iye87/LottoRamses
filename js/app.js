@@ -80,6 +80,6 @@ function loading(value){
 }
 
 function interstitial(){
-  var  interstitial = "ca-app-pub-3923020212258316/1322245253";
+  var  interstitial = "ca-app-pub-3923020212258316/5097309471";
     AdMob.prepareInterstitial( {adId:interstitial, autoShow: true});
 }
