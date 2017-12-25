@@ -1,29 +1,42 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ahv.shop" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.ransett.numero" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>LotoRansett</name>
     <description>
         Aplicación que con la ayuda de Ransett Numero le permitira jugar con mas plaser.
     </description>
-    <author email="iyemartinez1987@gmail.com" href="https://plus.google.com/u/0/+AsielHern%C3%A1ndezValdes">
+    <author email="iyemartinez1987@gmail.com" href="">
         Ing. Isidro Martínez Suárez
     </author>
 
    <preference name="AllowInlineMediaPlayback" value="true"/>
 
    <!--Plugins de IOS-->
-   <plugin name="cordova-plugin-statusbar" source="npm"/>
-   <preference name="StatusBarOverlaysWebView" value="false" />
-   <preference name="StatusBarStyle" value="default" />
+    <plugin name="cordova-plugin-statusbar" source="npm"/>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="SplashScreenDelay" value="10000"/>
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
+    <preference name="phonegap-version" value="cli-7.0.1" />
+
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="android-minSdkVersion" value="15" />
+
+    <!-- Can omit if not targetting Windows Phone -->
+    <preference name="windows-appx-target" value="8.1-phone" />
+    <preference name="WindowsToastCapable" value="true" />
+
    <!--Plugins de Android-->
-   <plugin name="cordova-plugin-whitelist"  source="npm"/>    
-   <plugin name="cordova-plugin-geolocation" source="npm"/>
-   <plugin name="cordova.plugins.diagnostic" source="npm" />
-   <plugin name="cordova-plugin-vibration"  source="npm"/>
-   <plugin name="cordova-plugin-file-transfer"  source="npm"/>
-   <plugin name="cordova-plugin-camera"  source="npm"/>
-   <plugin name="cordova-plugin-globalization"  source="npm"/>
+    <plugin name="cordova-plugin-whitelist"  source="npm"/>    
+    <plugin name="cordova-plugin-geolocation" source="npm"/>
+    <plugin name="cordova.plugins.diagnostic" source="npm" />
+    <plugin name="cordova-plugin-vibration"  source="npm"/>
+    <plugin name="cordova-plugin-globalization"  source="npm"/>
+    <plugin name="cordova-plugin-x-socialsharing" source="npm" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
    <plugin name="cordova-plugin-device"  source="npm"/>
    <plugin name="cordova-plugin-insomnia"/>
+    <plugin name="cordova-plugin-admobpro" source="npm"/>
    
 
     <icon src="icon.png" />

@@ -74,7 +74,7 @@ angular.module('starter.controllers', [])
           $scope.quiniela = localStorage.getItem("quiniela");
           $scope.quiela_visible=true;
           $scope.vs_solicitar_quiniela=false;
-          $scope.btn_pagar = false;
+          $scope.btn_pagar = true;
       }
     }
 
@@ -115,7 +115,7 @@ $http.get('https://serverloto.000webhostapp.com/webservise/parle.php').success(f
             $scope.parle = localStorage.getItem("parle");
             $scope.parle_visible=true;
             $scope.vs_solicitar_parle=false;
-            $scope.btn_pagar = false;
+            $scope.btn_pagar = true;
         }
       }
     }).error(function(){
@@ -153,7 +153,7 @@ $http.get('https://serverloto.000webhostapp.com/webservise/tripleta.php').succes
             $scope.tripleta = localStorage.getItem("tripleta");
             $scope.tripleta_visible=true;
             $scope.vs_solicitar_tripleta=false;
-            $scope.btn_pagar = false;
+            $scope.btn_pagar = true;
         }
       }  
       loading(false);
@@ -193,7 +193,7 @@ $http.get('https://serverloto.000webhostapp.com/webservise/pega_cuatro.php').suc
             $scope.pega_cuatro = localStorage.getItem("pega_cuatro");
             $scope.pega_cuatro_visible=true;
             $scope.vs_solicitar_pega_cuatro=false;
-            $scope.btn_pagar = false;
+            $scope.btn_pagar = true;
         }
       }  
       loading(false);
@@ -234,7 +234,7 @@ $http.get('https://serverloto.000webhostapp.com/webservise/loto.php').success(fu
             $scope.loto = localStorage.getItem("loto");
             $scope.loto_visible=true;
             $scope.vs_solicitar_loto=false;
-            $scope.btn_pagar = false;
+            $scope.btn_pagar = true;
         }
       }  
       loading(false);
@@ -255,7 +255,8 @@ $http.get('https://serverloto.000webhostapp.com/webservise/loto.php').success(fu
     } 
   }*/
 
- /* $scope.pagar = function(){
+ $scope.pagar = function(){
+  interstitial();
     localStorage.setItem("quiniela_solicitada", true);
     $scope.quiela_visible=true;
     $scope.vs_solicitar_quiniela=false;
@@ -272,7 +273,7 @@ $http.get('https://serverloto.000webhostapp.com/webservise/loto.php').success(fu
     $scope.loto_visible=true;
     $scope.vs_solicitar_loto=false;
     $scope.btn_pagar = true;
-  }*/
+  }
 
 /*  $scope.mostrar_pagar = function(){
     $scope.form_pagar = true;
@@ -284,7 +285,7 @@ $http.get('https://serverloto.000webhostapp.com/webservise/loto.php').success(fu
     $scope.form_loto = true;
   }*/
 
-  document.addEventListener("deviceready", onDeviceReady, false);
+ /* document.addEventListener("deviceready", onDeviceReady, false);
   function onDeviceReady() {
     $scope.codigo = device.uuid;
     alert($scope.codigo);
@@ -332,7 +333,7 @@ $http.get('https://serverloto.000webhostapp.com/webservise/loto.php').success(fu
   }else {
     $scope.sms_error = response.error.message;
   }
-  };
+  };*/
 
 })
 .controller('PlaylistCtrl', function($scope, $stateParams) {

@@ -1,4 +1,4 @@
-<ion-view view-title="Los números de Ransset">
+<ion-view view-title="Los números de Ransett">
   <ion-content>
     <div class="list">
         <img class="full-image" src="img/banner_ransett.png">
@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col" style="text-align: center">
                   <h2>Quiniela</h2>                  
-                  <div ng-show="quiela_visible"><p>Ransset recomienda: <h2><b>{{quiniela}}</h2></b></p></div>
+                  <div ng-show="quiela_visible"><p>Ransett recomienda: <h2><b>{{quiniela}}</h2></b></p></div>
                   <div ng-show="vs_solicitar_quiniela"><p>Solicitenos su número</p></div>
                 </div>
             </div>            
@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col" style="text-align: center">
                   <h2>Palé</h2>                  
-                  <div ng-show="parle_visible"><p>Ransset recomienda: <h2><b>{{parle}}</b></h2></p></div>
+                  <div ng-show="parle_visible"><p>Ransett recomienda: <h2><b>{{parle}}</b></h2></p></div>
                   <div ng-show="vs_solicitar_parle"><p>Solicitenos su número</p></div>
                 </div>
             </div>            
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col" style="text-align: center">
                   <h2>Tripleta</h2>                  
-                  <div ng-show="tripleta_visible"><p>Ransset recomienda: <h2><b>{{tripleta}}</b></h2></p></div>
+                  <div ng-show="tripleta_visible"><p>Ransett recomienda: <h2><b>{{tripleta}}</b></h2></p></div>
                   <div ng-show="vs_solicitar_tripleta"><p>Solicitenos su número</p></div>
                 </div>
             </div>            
@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col" style="text-align: center">
                       <h2>Pega 4</h2>                  
-                      <div ng-show="pega_cuatro_visible"><p>Ransset recomienda: <h2><b>{{pega_cuatro}}</b></h2></p></div>
+                      <div ng-show="pega_cuatro_visible"><p>Ransett recomienda: <h2><b>{{pega_cuatro}}</b></h2></p></div>
                       <div ng-show="vs_solicitar_pega_cuatro"><p>Solicitenos su número</p></div>
                     </div>
                 </div>            
@@ -52,14 +52,14 @@
                     <div class="row">
                         <div class="col" style="text-align: center">
                           <h2>Loto Ransset</h2>                  
-                          <div ng-show="loto_visible"><p>Ransset recomienda: <h2><b>{{loto}}</b></h2></p></div>
+                          <div ng-show="loto_visible"><p>Ransett recomienda: <h2><b>{{loto}}</b></h2></p></div>
                           <div ng-show="vs_solicitar_loto"><p>Solicitenos su número</p></div>
                         </div>
                     </div>            
                   </div>
           <label class="item">
-              <!--<button class="button button-assertive icon ion-ios-cart" ng-click="mostrar_pagar()" ng-disabled="btn_pagar"></button>-->
-              <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+              
+              <!--<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_xclick">
                 <input type="hidden" name="business" value="iyemartinez1987-facilitator@gmail.com">
                 <input type="hidden" name="item_name" value="Premium Subscription">
@@ -71,11 +71,14 @@
                 <input type="image" src="http://www.paypal.com/es_XC/i/btn/x-click-but01.gif"
                        name="submit"
                        alt="Make payments with PayPal - it's fast, free and secure!">
-            </form>
+            </form>-->
           </label>
           
       </div>
   </ion-content>
+  <div class="bar bar-footer">
+    <button class="button button-assertive" ng-click="pagar()" ng-disabled="btn_pagar" style="width: 100%;">Obtener Gratis</button>
+  </div>
 
   <!--<ion-content ng-show="form_pagar">
         <div class="row">

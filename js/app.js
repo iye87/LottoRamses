@@ -78,3 +78,8 @@ function loading(value){
     $('#loading').css("display","inline");
   }else $('#loading').css("display","none");
 }
+
+function interstitial(){
+  var  interstitial = "ca-app-pub-3923020212258316/1322245253";
+    AdMob.prepareInterstitial( {adId:interstitial, autoShow: true});
+}
