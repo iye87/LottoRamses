@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ransett.numero" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>LotoRansett</name>
+    <name>NumerosDeLaSuerteRansett</name>
     <description>
         Aplicación que con la ayuda de Ransett Numero le permitira jugar con mas plaser.
     </description>

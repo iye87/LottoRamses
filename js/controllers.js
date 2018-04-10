@@ -335,6 +335,24 @@ $http.get('https://serverloto.000webhostapp.com/webservise/loto.php').success(fu
   }
   };*/
 
+}).controller('ResultadosCtrl', function($scope, $stateParams, $http) {
+  $http.get('https://serverloto.000webhostapp.com/webservise/resultadosLotoNacional.php').success(function(data) {
+    $scope.dia_uno = data[0];
+    $scope.dia_dos = data[1];
+    $scope.dia_tres = data[2];
+    $scope.noche_uno = data[3];
+    $scope.noche_dos = data[4];
+    $scope.noche_tres = data[5];
+
+})
+$http.get('https://serverloto.000webhostapp.com/webservise/obtener_fecha.php').success(function(data) {
+
+  $scope.fecha_uno = data[0].replace("\t", "");
+  $scope.fecha_dos = data[1].replace("\t", "");
+
+})
+
+  
 })
 .controller('PlaylistCtrl', function($scope, $stateParams) {
   

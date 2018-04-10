@@ -42,11 +42,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'stripe'])
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.resultados', {
+      url: '/resultados',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/resultados.html',
+          controller: 'ResultadosCtrl'
         }
       }
     })
